@@ -16,3 +16,6 @@ platform `production`, topic `app.tich.connect`, convert_device_token_to_hex
 APNs keyfile, key_id и team_id доставляются только из SOPS Deploy OS.
 До регистрации ключа и smoke на устройстве push остаётся неподтверждённым.
 Healthcheck использует Python из образа и не требует отсутствующего curl.
+
+Проверка `Docker checks` собирает образ и сохраняет его как CI artifact.
+Публикация в upstream DockerHub доступна только репозиторию Element.
